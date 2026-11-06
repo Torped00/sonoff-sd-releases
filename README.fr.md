@@ -1,9 +1,9 @@
 <p align="center"><img src="assets/hero-fr.svg" alt="Sonoff SD — Vos enregistrements, sur votre PC." width="100%"></p>
 
-<p align="center"><b>Windows 10 / 11 · 64 bits · Français / English</b><br>Bêta 2 · Projet indépendant · CAM-PT2, firmware 1.2.2</p>
+<p align="center"><b>Windows 10 / 11 · 64 bits · Français / English</b><br>Bêta 3 · Par Torpedo · Projet indépendant · CAM-PT2, firmware 1.2.2</p>
 
 <p align="center">
-  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.5.0-beta.2/SonoffSD-Setup-3.5.0-beta.2-win64.exe"><img src="assets/download-fr.svg" alt="Télécharger l’EXE Windows — 3.5 bêta 2" width="320"></a><br>
+  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.5.0-beta.3/SonoffSD-Setup-3.5.0-beta.3-win64.exe"><img src="assets/download-fr.svg" alt="Télécharger l’EXE Windows — 3.5 bêta 3" width="320"></a><br>
   <a href="README.md">Read in English</a> · <a href="#bien-démarrer">Premiers pas</a> · <a href="https://github.com/Torped00/sonoff-sd-releases/releases">Versions et SHA-256</a>
 </p>
 
@@ -29,7 +29,7 @@ Faites glisser les repères de début et de fin, vérifiez la sélection, puis e
 
 ## Bien démarrer
 
-1. Téléchargez et lancez **SonoffSD-Setup-3.5.0-beta.2-win64.exe**. Python et une installation séparée de VLC ne sont pas nécessaires. L’installateur propose séparément les raccourcis **Bureau** et **menu Démarrer** ; ils ouvrent l’application complète.
+1. Téléchargez et lancez **SonoffSD-Setup-3.5.0-beta.3-win64.exe**. Python et une installation séparée de VLC ne sont pas nécessaires. L’installateur propose séparément les raccourcis **Bureau** et **menu Démarrer** ; ils ouvrent l’application complète.
 2. Pour la première préparation, **éteignez la caméra**, retirez sa microSD et branchez-la au PC avec un lecteur de cartes.
 3. Dans **Mes caméras → Préparer une SD CAM-PT2**, choisissez la carte amovible et confirmez le modèle et le firmware. Un script de démarrage inconnu est refusé. Aucun formatage, aucune suppression de vidéo.
 4. Éjectez la carte, remettez-la dans la caméra éteinte, puis rallumez-la. Attendez environ deux minutes.
@@ -46,6 +46,12 @@ Faites glisser les repères de début et de fin, vérifiez la sélection, puis e
 - L’accès local utilise **HTTP authentifié**, sans chiffrement du transport. Utilisez un réseau de confiance et **n’exposez pas le port 8088 à Internet**.
 - Cette bêta publique privilégie la copie directe en Wi-Fi. Le mode eWeLink historique nécessite une configuration de client compatible distincte et reste expérimental. Aucun secret de client cloud ni identifiant de compte n’est fourni.
 - L’EXE est **non signé numériquement**. Windows peut afficher un avertissement de réputation. Vérifiez l’origine du téléchargement et son SHA-256 dans la release. Le test indépendant sur un PC vierge reste à faire.
+
+## Un projet de Torpedo
+
+**Créé par Torpedo.** Le bouton **À propos · Torpedo** dans l’application présente le créateur, la version, le lien du projet et les licences des composants.
+
+<p align="center"><img src="assets/about-fr.png" alt="Fenêtre À propos de Sonoff SD : un projet de Torpedo" width="360"></p>
 
 ## Questions fréquentes
 
@@ -81,4 +87,4 @@ Retirez adresses e-mail, images privées, adresses IP et clés d’association d
 
 ---
 
-Projet indépendant de **Torped00**, sans affiliation ni approbation de SONOFF, eWeLink ou VideoLAN. Leurs noms appartiennent à leurs propriétaires respectifs. Ce dépôt n’accorde aucune licence open source sur le code privé de l’application.
+Projet indépendant de **Torpedo**, sans affiliation ni approbation de SONOFF, eWeLink ou VideoLAN. Leurs noms appartiennent à leurs propriétaires respectifs. Ce dépôt n’accorde aucune licence open source sur le code privé de l’application.

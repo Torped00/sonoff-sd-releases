@@ -2,11 +2,11 @@
 
 <p align="center">
   <b>Windows 10 / 11 · 64-bit · Français / English</b><br>
-  Beta 2 · Independently developed · CAM-PT2 firmware 1.2.2
+  Beta 3 · By Torpedo · Independently developed · CAM-PT2 firmware 1.2.2
 </p>
 
 <p align="center">
-  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.5.0-beta.2/SonoffSD-Setup-3.5.0-beta.2-win64.exe"><img src="assets/download-en.svg" alt="Download the Windows EXE — 3.5 beta 2" width="320"></a><br>
+  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.5.0-beta.3/SonoffSD-Setup-3.5.0-beta.3-win64.exe"><img src="assets/download-en.svg" alt="Download the Windows EXE — 3.5 beta 3" width="320"></a><br>
   <a href="README.fr.md">Lire en français</a> · <a href="#get-started">Getting started</a> · <a href="https://github.com/Torped00/sonoff-sd-releases/releases">Release notes & SHA-256</a>
 </p>
 
@@ -32,7 +32,7 @@ Drag the start and end handles, check the passage, then export it. Full-file exp
 
 ## Get started
 
-1. Download and run **SonoffSD-Setup-3.5.0-beta.2-win64.exe**. Python and a separate VLC installation are not required. The installer offers separate **Desktop** and **Start menu** shortcuts; both open the complete application.
+1. Download and run **SonoffSD-Setup-3.5.0-beta.3-win64.exe**. Python and a separate VLC installation are not required. The installer offers separate **Desktop** and **Start menu** shortcuts; both open the complete application.
 2. For the initial setup, power the camera **off**, remove its microSD card and connect it to the PC with a card reader.
 3. In **My cameras → Prepare a CAM-PT2 SD card**, select the removable card and confirm the model and firmware. Existing unrecognised startup scripts are refused. The card is not formatted and recordings are not deleted.
 4. Eject the card, insert it into the powered-off camera, and power it on. Allow about two minutes for startup.
@@ -49,6 +49,12 @@ Drag the start and end handles, check the passage, then export it. Full-file exp
 - Access uses authenticated **HTTP on the LAN**, without transport encryption. Use a trusted network and **do not expose port 8088 to the Internet**.
 - The public beta focuses on direct Wi-Fi file access. The legacy eWeLink path requires a separately configured compatible client and remains experimental; no cloud client secrets or account credentials are provided.
 - This EXE is **not digitally signed**. Windows may display a reputation warning. Verify the download location and the SHA-256 published with the release. An independent clean-PC test is still pending.
+
+## A project by Torpedo
+
+**Created by Torpedo.** The **About · Torpedo** button shows the project creator, version, project link and component licences.
+
+<p align="center"><img src="assets/about-en.png" alt="Sonoff SD About dialog: a project by Torpedo" width="360"></p>
 
 ## Questions
 
@@ -84,4 +90,4 @@ Remove email addresses, camera images, IP addresses and pairing keys from anythi
 
 ---
 
-Sonoff SD is an independent project by **Torped00**. It is not affiliated with, endorsed by, or supported by SONOFF, eWeLink or VideoLAN. Their names remain the property of their respective owners. No open-source licence is granted for the application’s private code by this repository.
+Sonoff SD is an independent project by **Torpedo**. It is not affiliated with, endorsed by, or supported by SONOFF, eWeLink or VideoLAN. Their names remain the property of their respective owners. No open-source licence is granted for the application’s private code by this repository.
