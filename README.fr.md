@@ -11,6 +11,8 @@
 
 Sonoff SD permet de parcourir les **enregistrements microSD d’une SONOFF CAM-PT2**, de les regarder avec le son et de les récupérer sur un PC Windows, par le réseau local. Une fois la carte préparée, vous transférez le véritable fichier enregistré, sans devoir réenregistrer sa relecture en temps réel. Le délai dépend de la taille du fichier et du réseau.
 
+> **Testé sur une SONOFF CAM-PT2, firmware 1.2.2 — SN-T23N-CAMPT2-01.** D’autres caméras partageant ce firmware ou la même base logicielle pourraient aussi fonctionner : c’est une piste à confirmer, pas une compatibilité déjà validée. Vous avez le même firmware, une autre version ou une autre caméra SONOFF ? **[Vos retours nous intéressent, même pour signaler votre modèle sans l’avoir testé !](#vos-retours)**
+
 <p align="center"><img src="assets/preview-fr.png" alt="La liste des enregistrements et le lecteur intégré de Sonoff SD, avec une vidéo de démonstration synthétique" width="100%"></p>
 <p align="center"><sub>Vraie interface de l’application. Vidéo et informations de caméra de démonstration.</sub></p>
 
@@ -37,8 +39,9 @@ Faites glisser les repères de début et de fin, vérifiez la sélection, puis e
 
 ## Compatibilité et limites
 
-- **Matériel vérifié à ce jour :** SONOFF CAM-PT2, firmware **1.2.2**, nom du firmware **SN-T23N-CAMPT2-01**. La compatibilité de toutes les révisions CAM-PT2 n’est pas garantie.
-- La recherche ONVIF peut détecter d’autres marques. Cela ne signifie pas que l’accès à leurs enregistrements est compatible. Ne préparez pas la carte d’un autre modèle avec cet outil.
+- **Matériel vérifié à ce jour :** un exemplaire SONOFF CAM-PT2, firmware **1.2.2**, nom du firmware **SN-T23N-CAMPT2-01**.
+- **Compatibilité possible, à confirmer :** d’autres exemplaires, révisions ou modèles partageant ce firmware ou sa base logicielle. Le même nom de firmware est une piste ; la marque SONOFF seule ne suffit pas à garantir la compatibilité. Les retours permettront de constituer une liste de configurations confirmées.
+- La recherche ONVIF peut détecter d’autres marques. Cela ne signifie pas que l’accès à leurs enregistrements est compatible. Pour un autre modèle ou firmware, partagez d’abord ses références dans un ticket de compatibilité avant de préparer sa carte avec cet outil.
 - Les fichiers ajoutés sur la SD démarrent un service HTTP local protégé. Aucun firmware n’est installé. La caméra continue à créer ses enregistrements ; le direct eWeLink a été vérifié sur l’exemplaire testé.
 - L’accès local utilise **HTTP authentifié**, sans chiffrement du transport. Utilisez un réseau de confiance et **n’exposez pas le port 8088 à Internet**.
 - Cette bêta publique privilégie la copie directe en Wi-Fi. Le mode eWeLink historique nécessite une configuration de client compatible distincte et reste expérimental. Aucun secret de client cloud ni identifiant de compte n’est fourni.
@@ -63,7 +66,18 @@ Leurs notices et les archives de sources disponibles se trouvent dans `_internal
 
 ## Vos retours
 
-[Signalez un problème](https://github.com/Torped00/sonoff-sd-releases/issues) en indiquant la version de l’application, le modèle, le firmware et les étapes du problème. Retirez adresses e-mail, images privées, adresses IP et clés d’association de vos pièces jointes. N’envoyez jamais vos fichiers d’association, mots de passe, captures réseau ou fichiers keylog.
+**Les réussites nous intéressent autant que les problèmes.** Vous utilisez une CAM-PT2 avec le même firmware, une autre version, ou simplement une autre caméra SONOFF ? [Partagez votre configuration ou votre retour de compatibilité](https://github.com/Torped00/sonoff-sd-releases/issues/new). Vous pouvez aussi signaler un modèle que vous possédez sans avoir effectué de test.
+
+Pour rendre votre retour utile, indiquez :
+
+- la marque, le modèle exact et la révision matérielle si elle est connue ;
+- la **version du firmware** et son **nom / « FW name »**, s’ils sont affichés ;
+- la version de Sonoff SD et de Windows ;
+- si vous avez testé ou non ; en cas d’essai, ce qui fonctionne ou bloque : connexion, liste des vidéos, aperçu, téléchargement avec son, extraits et maintien du direct eWeLink.
+
+Un signalement de modèle n’est pas encore une validation. Les essais concluants comme les échecs aideront à préciser la compatibilité et les adaptations possibles.
+
+Retirez adresses e-mail, images privées, adresses IP et clés d’association de vos pièces jointes. N’envoyez jamais vos fichiers d’association, mots de passe, captures réseau ou fichiers keylog.
 
 ---
 
