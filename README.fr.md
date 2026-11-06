@@ -1,9 +1,9 @@
 <p align="center"><img src="assets/hero-fr.svg" alt="Sonoff SD — Vos enregistrements, sur votre PC." width="100%"></p>
 
-<p align="center"><b>Windows 10 / 11 · 64 bits · Français / English</b><br>Première bêta publique · Projet indépendant · CAM-PT2, firmware 1.2.2</p>
+<p align="center"><b>Windows 10 / 11 · 64 bits · Français / English</b><br>Bêta 2 · Projet indépendant · CAM-PT2, firmware 1.2.2</p>
 
 <p align="center">
-  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.5.0-beta.1/SonoffSD-Setup-3.5.0-beta.1-win64.exe"><img src="assets/download-fr.svg" alt="Télécharger l’EXE Windows — 3.5 bêta" width="320"></a><br>
+  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.5.0-beta.2/SonoffSD-Setup-3.5.0-beta.2-win64.exe"><img src="assets/download-fr.svg" alt="Télécharger l’EXE Windows — 3.5 bêta 2" width="320"></a><br>
   <a href="README.md">Read in English</a> · <a href="#bien-démarrer">Premiers pas</a> · <a href="https://github.com/Torped00/sonoff-sd-releases/releases">Versions et SHA-256</a>
 </p>
 
@@ -29,13 +29,13 @@ Faites glisser les repères de début et de fin, vérifiez la sélection, puis e
 
 ## Bien démarrer
 
-1. Téléchargez et lancez **SonoffSD-Setup-3.5.0-beta.1-win64.exe**. Python et une installation séparée de VLC ne sont pas nécessaires.
+1. Téléchargez et lancez **SonoffSD-Setup-3.5.0-beta.2-win64.exe**. Python et une installation séparée de VLC ne sont pas nécessaires. L’installateur propose séparément les raccourcis **Bureau** et **menu Démarrer** ; ils ouvrent l’application complète.
 2. Pour la première préparation, **éteignez la caméra**, retirez sa microSD et branchez-la au PC avec un lecteur de cartes.
 3. Dans **Mes caméras → Préparer une SD CAM-PT2**, choisissez la carte amovible et confirmez le modèle et le firmware. Un script de démarrage inconnu est refusé. Aucun formatage, aucune suppression de vidéo.
 4. Éjectez la carte, remettez-la dans la caméra éteinte, puis rallumez-la. Attendez environ deux minutes.
 5. Sur le même réseau local de confiance, recherchez la caméra ou saisissez son adresse, choisissez une date et lancez un aperçu ou un téléchargement.
 
-**Déjà associé sur une autre installation ?** Importez votre association existante depuis la fenêtre de préparation. Gardez ce fichier privé : il contient les clés d’accès à la caméra. Une nouvelle installation ne connaît pas automatiquement les clés d’une carte déjà préparée.
+**Carte déjà préparée avec une autre installation ?** Importez votre association existante depuis la fenêtre de préparation ; inutile de préparer à nouveau la carte. Sans association, le bouton « Se connecter » ouvre cette fenêtre. Les versions de l’EXE installées sur le même PC partagent leurs réglages utilisateur. Gardez votre fichier d’association privé : il contient les clés d’accès à la caméra. Une nouvelle installation ne connaît pas automatiquement les clés d’une carte déjà préparée.
 
 ## Compatibilité et limites
 
