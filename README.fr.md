@@ -1,9 +1,9 @@
 <p align="center"><img src="assets/hero-fr.svg" alt="Sonoff SD — Vos enregistrements, sur votre PC." width="100%"></p>
 
-<p align="center"><b>Windows 10 / 11 · 64 bits · Français / English</b><br>Bêta 3 · Par Torpedo · Projet indépendant · CAM-PT2, firmware 1.2.2</p>
+<p align="center"><b>Windows 10 / 11 · 64 bits · Français / English</b><br>3.6 bêta 1 · Par Torpedo · Projet indépendant · CAM-PT2, firmware 1.2.2</p>
 
 <p align="center">
-  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.5.0-beta.3/SonoffSD-Setup-3.5.0-beta.3-win64.exe"><img src="assets/download-fr.svg" alt="Télécharger l’EXE Windows — 3.5 bêta 3" width="320"></a><br>
+  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.6.0-beta.1/SonoffSD-Setup-3.6.0-beta.1-win64.exe"><img src="assets/download-fr.svg" alt="Télécharger l’EXE Windows — 3.6 bêta 1" width="320"></a><br>
   <a href="README.md">Read in English</a> · <a href="#bien-démarrer">Premiers pas</a> · <a href="https://github.com/Torped00/sonoff-sd-releases/releases">Versions et SHA-256</a>
 </p>
 
@@ -29,13 +29,19 @@ Faites glisser les repères de début et de fin, vérifiez la sélection, puis e
 
 ## Bien démarrer
 
-1. Téléchargez et lancez **SonoffSD-Setup-3.5.0-beta.3-win64.exe**. Python et une installation séparée de VLC ne sont pas nécessaires. L’installateur propose séparément les raccourcis **Bureau** et **menu Démarrer** ; ils ouvrent l’application complète.
+1. Téléchargez et lancez **SonoffSD-Setup-3.6.0-beta.1-win64.exe**. Python et une installation séparée de VLC ne sont pas nécessaires. L’installateur propose séparément les raccourcis **Bureau** et **menu Démarrer** ; ils ouvrent l’application complète.
 2. Pour la première préparation, **éteignez la caméra**, retirez sa microSD et branchez-la au PC avec un lecteur de cartes.
 3. Dans **Mes caméras → Préparer une SD CAM-PT2**, choisissez la carte amovible et confirmez le modèle et le firmware. Un script de démarrage inconnu est refusé. Aucun formatage, aucune suppression de vidéo.
 4. Éjectez la carte, remettez-la dans la caméra éteinte, puis rallumez-la. Attendez environ deux minutes.
 5. Sur le même réseau local de confiance, recherchez la caméra ou saisissez son adresse, choisissez une date et lancez un aperçu ou un téléchargement.
 
 **Carte déjà préparée avec une autre installation ?** Importez votre association existante depuis la fenêtre de préparation ; inutile de préparer à nouveau la carte. Sans association, le bouton « Se connecter » ouvre cette fenêtre. Les versions de l’EXE installées sur le même PC partagent leurs réglages utilisateur. Gardez votre fichier d’association privé : il contient les clés d’accès à la caméra. Une nouvelle installation ne connaît pas automatiquement les clés d’une carte déjà préparée.
+
+## Installation, mises à jour et désinstallation
+
+À partir de la version **3.6**, les mises à jour utilisent un dossier d’application unique et un raccourci **Sonoff SD – Torpedo**. L’installateur propose de placer les trois anciennes bêtas 3.5 dans la Corbeille après avoir vérifié tous leurs fichiers. Tout dossier modifié ou non reconnu est conservé et signalé.
+
+Le désinstalleur est accessible dans les **applications installées de Windows**, ainsi que par `Uninstall.exe` dans le dossier de l’application. Les réglages, associations de caméra et vidéos téléchargées sont conservés pour une réinstallation. Désinstaller le logiciel Windows ne désactive pas les fichiers de démarrage présents sur la microSD ; leur retrait reste une opération distincte.
 
 ## Compatibilité et limites
 

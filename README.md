@@ -2,11 +2,11 @@
 
 <p align="center">
   <b>Windows 10 / 11 · 64-bit · Français / English</b><br>
-  Beta 3 · By Torpedo · Independently developed · CAM-PT2 firmware 1.2.2
+  3.6 beta 1 · By Torpedo · Independently developed · CAM-PT2 firmware 1.2.2
 </p>
 
 <p align="center">
-  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.5.0-beta.3/SonoffSD-Setup-3.5.0-beta.3-win64.exe"><img src="assets/download-en.svg" alt="Download the Windows EXE — 3.5 beta 3" width="320"></a><br>
+  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.6.0-beta.1/SonoffSD-Setup-3.6.0-beta.1-win64.exe"><img src="assets/download-en.svg" alt="Download the Windows EXE — 3.6 beta 1" width="320"></a><br>
   <a href="README.fr.md">Lire en français</a> · <a href="#get-started">Getting started</a> · <a href="https://github.com/Torped00/sonoff-sd-releases/releases">Release notes & SHA-256</a>
 </p>
 
@@ -32,13 +32,19 @@ Drag the start and end handles, check the passage, then export it. Full-file exp
 
 ## Get started
 
-1. Download and run **SonoffSD-Setup-3.5.0-beta.3-win64.exe**. Python and a separate VLC installation are not required. The installer offers separate **Desktop** and **Start menu** shortcuts; both open the complete application.
+1. Download and run **SonoffSD-Setup-3.6.0-beta.1-win64.exe**. Python and a separate VLC installation are not required. The installer offers separate **Desktop** and **Start menu** shortcuts; both open the complete application.
 2. For the initial setup, power the camera **off**, remove its microSD card and connect it to the PC with a card reader.
 3. In **My cameras → Prepare a CAM-PT2 SD card**, select the removable card and confirm the model and firmware. Existing unrecognised startup scripts are refused. The card is not formatted and recordings are not deleted.
 4. Eject the card, insert it into the powered-off camera, and power it on. Allow about two minutes for startup.
 5. Keep the camera and PC on the same trusted local network. Find or enter the camera, choose a date and preview or download your recordings.
 
 **Card already prepared with another installation?** Import its existing pairing in the card preparation window; do not prepare the card again. Without a pairing, Connect opens this window. EXE versions installed on the same PC share per-user settings. Keep pairing files private: they contain camera access keys. A new installation does not automatically know an existing card’s keys.
+
+## Installation, updates and uninstall
+
+Starting with **3.6**, updates use one application folder and a stable **Sonoff SD – Torpedo** shortcut. The installer offers to move the three older 3.5 betas to the Recycle Bin after verifying all their files. Modified or unrecognised folders are preserved and reported.
+
+The uninstaller is available in **Windows installed apps**, or through `Uninstall.exe` in the application folder. Settings, camera pairings and downloaded videos are kept for reinstallation. Uninstalling the Windows application does not disable the startup files on the microSD card; removing those remains a separate operation.
 
 ## Compatibility & limits
 
