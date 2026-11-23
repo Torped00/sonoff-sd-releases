@@ -2,13 +2,20 @@
 
 <p align="center">
   <b>Windows 10 / 11 · 64-bit · Français / English</b><br>
-  3.6 beta 1 · By Torpedo · Independently developed · CAM-PT2 firmware 1.2.2
+  3.6 beta 4 · By Torpedo · Independently developed · CAM-PT2 firmware 1.2.2
 </p>
 
 <p align="center">
-  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.6.0-beta.1/SonoffSD-Setup-3.6.0-beta.1-win64.exe"><img src="assets/download-en.svg" alt="Download the Windows EXE — 3.6 beta 1" width="320"></a><br>
+  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.6.0-beta.4/SonoffSD-Setup-3.6.0-beta.4-win64.exe"><img src="assets/download-en.svg" alt="Download the Windows EXE — 3.6 beta 4" width="320"></a><br>
   <a href="README.fr.md">Lire en français</a> · <a href="#get-started">Getting started</a> · <a href="https://github.com/Torped00/sonoff-sd-releases/releases">Release notes & SHA-256</a>
 </p>
+
+## New in 3.6 beta 4
+
+- The list/preview divider remembers its position across restarts and adapts to window size.
+- Recordings load automatically after connecting. Manual date searches remain available.
+- The audio export checkbox stays usable during preview and has a larger, clearer check mark.
+- Installation shows verification, copying and finalization, with progress updates inside large files. A full install can still take a few minutes.
 
 ## Find the moment. Keep the file.
 
@@ -32,11 +39,11 @@ Drag the start and end handles, check the passage, then export it. Full-file exp
 
 ## Get started
 
-1. Download and run **SonoffSD-Setup-3.6.0-beta.1-win64.exe**. Python and a separate VLC installation are not required. The installer offers separate **Desktop** and **Start menu** shortcuts; both open the complete application.
+1. Download and run **SonoffSD-Setup-3.6.0-beta.4-win64.exe**. Python and a separate VLC installation are not required. The installer offers separate **Desktop** and **Start menu** shortcuts; both open the complete application.
 2. For the initial setup, power the camera **off**, remove its microSD card and connect it to the PC with a card reader.
 3. In **My cameras → Prepare a CAM-PT2 SD card**, select the removable card and confirm the model and firmware. Existing unrecognised startup scripts are refused. The card is not formatted and recordings are not deleted.
 4. Eject the card, insert it into the powered-off camera, and power it on. Allow about two minutes for startup.
-5. Keep the camera and PC on the same trusted local network. Find or enter the camera, choose a date and preview or download your recordings.
+5. Keep the camera and PC on the same trusted local network. Find or enter the camera and connect. Recordings load automatically; choose another date when needed, then preview or download.
 
 **Card already prepared with another installation?** Import its existing pairing in the card preparation window; do not prepare the card again. Without a pairing, Connect opens this window. EXE versions installed on the same PC share per-user settings. Keep pairing files private: they contain camera access keys. A new installation does not automatically know an existing card’s keys.
 
@@ -49,6 +56,7 @@ The uninstaller is available in **Windows installed apps**, or through `Uninstal
 ## Compatibility & limits
 
 - **Hardware verified so far:** one SONOFF CAM-PT2 unit, firmware **1.2.2**, firmware name **SN-T23N-CAMPT2-01**.
+- **Community-reported success:** a Reddit user reports that reference **SN-CAM-S3W-01**, firmware **1.2.1**, works. The commercial model and access mode have not yet been clarified. This is a user report, not a separate lab test.
 - **Potential compatibility, awaiting confirmation:** other units, revisions or models sharing this firmware or its software base. A matching firmware name is a useful lead; the SONOFF brand alone does not guarantee compatibility. Community reports will help build a list of confirmed configurations.
 - Discovery can find other brands through ONVIF. Detection does **not** mean their SD recordings are compatible. For another model or firmware, first share its details in a compatibility issue before preparing its card with this helper.
 - The SD helper starts a protected local HTTP service. It does not install camera firmware. Recordings continue to be created by the camera; eWeLink live view was verified on the tested unit.
@@ -87,7 +95,7 @@ Please include:
 
 - the brand, exact model and hardware revision, if known;
 - the **firmware version** and **firmware name / “FW name”**, if shown;
-- your Sonoff SD and Windows versions;
+- your Sonoff SD and Windows versions, and the access mode used (direct Wi-Fi or eWeLink account);
 - whether you tested it; if so, what works or fails: connection, recording list, preview, downloads with audio, clips and continued eWeLink live view.
 
 A model report is not yet a compatibility confirmation. Both successes and failures will help identify supported configurations and possible adaptations.
