@@ -2,15 +2,20 @@
 
 <p align="center">
   <b>Windows 10 / 11 · 64-bit · Français / English</b><br>
-  3.6 beta 4 · By Torpedo · Independently developed · CAM-PT2 firmware 1.2.2
+  3.6 beta 5 · By Torpedo · Independently developed · CAM-PT2 firmware 1.2.2
 </p>
 
 <p align="center">
-  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.6.0-beta.4/SonoffSD-Setup-3.6.0-beta.4-win64.exe"><img src="assets/download-en.svg" alt="Download the Windows EXE — 3.6 beta 4" width="320"></a><br>
+  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.6.0-beta.5/SonoffSD-Setup-3.6.0-beta.5-win64.exe"><img src="assets/download-en.svg" alt="Download the Windows EXE — 3.6 beta 5" width="320"></a><br>
   <a href="README.fr.md">Lire en français</a> · <a href="#get-started">Getting started</a> · <a href="https://github.com/Torped00/sonoff-sd-releases/releases">Release notes & SHA-256</a>
 </p>
 
-## New in 3.6 beta 4
+## New in 3.6 beta 5
+
+- The window remembers its size, screen position and maximized state.
+- If a monitor is disconnected or the display arrangement changes, the window returns to an available work area. Player full screen and minimizing do not overwrite its normal size.
+
+Earlier improvements are retained:
 
 - The list/preview divider remembers its position across restarts and adapts to window size.
 - Recordings load automatically after connecting. Manual date searches remain available.
@@ -39,7 +44,7 @@ Drag the start and end handles, check the passage, then export it. Full-file exp
 
 ## Get started
 
-1. Download and run **SonoffSD-Setup-3.6.0-beta.4-win64.exe**. Python and a separate VLC installation are not required. The installer offers separate **Desktop** and **Start menu** shortcuts; both open the complete application.
+1. Download and run **SonoffSD-Setup-3.6.0-beta.5-win64.exe**. Python and a separate VLC installation are not required. The installer offers separate **Desktop** and **Start menu** shortcuts; both open the complete application.
 2. For the initial setup, power the camera **off**, remove its microSD card and connect it to the PC with a card reader.
 3. In **My cameras → Prepare a CAM-PT2 SD card**, select the removable card and confirm the model and firmware. Existing unrecognised startup scripts are refused. The card is not formatted and recordings are not deleted.
 4. Eject the card, insert it into the powered-off camera, and power it on. Allow about two minutes for startup.
@@ -56,7 +61,7 @@ The uninstaller is available in **Windows installed apps**, or through `Uninstal
 ## Compatibility & limits
 
 - **Hardware verified so far:** one SONOFF CAM-PT2 unit, firmware **1.2.2**, firmware name **SN-T23N-CAMPT2-01**.
-- **Community-reported success:** a Reddit user reports that reference **SN-CAM-S3W-01**, firmware **1.2.1**, works. The commercial model and access mode have not yet been clarified. This is a user report, not a separate lab test.
+- **Community-reported success:** a Reddit user reports that reference **SN-CAM-S3W-01**, firmware **1.2.1**, works using **direct Wi-Fi access**. The commercial model has not been independently clarified. This is a user report, not a separate lab test.
 - **Potential compatibility, awaiting confirmation:** other units, revisions or models sharing this firmware or its software base. A matching firmware name is a useful lead; the SONOFF brand alone does not guarantee compatibility. Community reports will help build a list of confirmed configurations.
 - Discovery can find other brands through ONVIF. Detection does **not** mean their SD recordings are compatible. For another model or firmware, first share its details in a compatibility issue before preparing its card with this helper.
 - The SD helper starts a protected local HTTP service. It does not install camera firmware. Recordings continue to be created by the camera; eWeLink live view was verified on the tested unit.

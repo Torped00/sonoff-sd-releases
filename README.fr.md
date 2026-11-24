@@ -1,13 +1,18 @@
 <p align="center"><img src="assets/hero-fr.svg" alt="Sonoff SD — Vos enregistrements, sur votre PC." width="100%"></p>
 
-<p align="center"><b>Windows 10 / 11 · 64 bits · Français / English</b><br>3.6 bêta 4 · Par Torpedo · Projet indépendant · CAM-PT2, firmware 1.2.2</p>
+<p align="center"><b>Windows 10 / 11 · 64 bits · Français / English</b><br>3.6 bêta 5 · Par Torpedo · Projet indépendant · CAM-PT2, firmware 1.2.2</p>
 
 <p align="center">
-  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.6.0-beta.4/SonoffSD-Setup-3.6.0-beta.4-win64.exe"><img src="assets/download-fr.svg" alt="Télécharger l’EXE Windows — 3.6 bêta 4" width="320"></a><br>
+  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.6.0-beta.5/SonoffSD-Setup-3.6.0-beta.5-win64.exe"><img src="assets/download-fr.svg" alt="Télécharger l’EXE Windows — 3.6 bêta 5" width="320"></a><br>
   <a href="README.md">Read in English</a> · <a href="#bien-démarrer">Premiers pas</a> · <a href="https://github.com/Torped00/sonoff-sd-releases/releases">Versions et SHA-256</a>
 </p>
 
-## Nouveautés de la 3.6 bêta 4
+## Nouveautés de la 3.6 bêta 5
+
+- La fenêtre mémorise sa taille, sa position à l’écran et son état agrandi.
+- Si un écran est débranché ou si la disposition change, la fenêtre revient dans une zone de travail disponible. Le plein écran du lecteur et la réduction ne remplacent pas ses dimensions normales.
+
+Les améliorations précédentes sont conservées :
 
 - La séparation liste/aperçu mémorise sa position et s’adapte à la taille de la fenêtre.
 - Les vidéos se chargent automatiquement après connexion. La recherche par date reste disponible.
@@ -36,7 +41,7 @@ Faites glisser les repères de début et de fin, vérifiez la sélection, puis e
 
 ## Bien démarrer
 
-1. Téléchargez et lancez **SonoffSD-Setup-3.6.0-beta.4-win64.exe**. Python et une installation séparée de VLC ne sont pas nécessaires. L’installateur propose séparément les raccourcis **Bureau** et **menu Démarrer** ; ils ouvrent l’application complète.
+1. Téléchargez et lancez **SonoffSD-Setup-3.6.0-beta.5-win64.exe**. Python et une installation séparée de VLC ne sont pas nécessaires. L’installateur propose séparément les raccourcis **Bureau** et **menu Démarrer** ; ils ouvrent l’application complète.
 2. Pour la première préparation, **éteignez la caméra**, retirez sa microSD et branchez-la au PC avec un lecteur de cartes.
 3. Dans **Mes caméras → Préparer une SD CAM-PT2**, choisissez la carte amovible et confirmez le modèle et le firmware. Un script de démarrage inconnu est refusé. Aucun formatage, aucune suppression de vidéo.
 4. Éjectez la carte, remettez-la dans la caméra éteinte, puis rallumez-la. Attendez environ deux minutes.
@@ -53,7 +58,7 @@ Le désinstalleur est accessible dans les **applications installées de Windows*
 ## Compatibilité et limites
 
 - **Matériel vérifié à ce jour :** un exemplaire SONOFF CAM-PT2, firmware **1.2.2**, nom du firmware **SN-T23N-CAMPT2-01**.
-- **Retour utilisateur positif :** un utilisateur Reddit indique que la référence **SN-CAM-S3W-01**, firmware **1.2.1**, fonctionne. Le modèle commercial et le mode d’accès restent à préciser. Ce retour utilisateur ne constitue pas un essai supplémentaire en laboratoire.
+- **Retour utilisateur positif :** un utilisateur Reddit indique que la référence **SN-CAM-S3W-01**, firmware **1.2.1**, fonctionne en **accès direct Wi-Fi**. Le modèle commercial n’a pas été précisé de façon indépendante. Ce retour utilisateur ne constitue pas un essai supplémentaire en laboratoire.
 - **Compatibilité possible, à confirmer :** d’autres exemplaires, révisions ou modèles partageant ce firmware ou sa base logicielle. Le même nom de firmware est une piste ; la marque SONOFF seule ne suffit pas à garantir la compatibilité. Les retours permettront de constituer une liste de configurations confirmées.
 - La recherche ONVIF peut détecter d’autres marques. Cela ne signifie pas que l’accès à leurs enregistrements est compatible. Pour un autre modèle ou firmware, partagez d’abord ses références dans un ticket de compatibilité avant de préparer sa carte avec cet outil.
 - Les fichiers ajoutés sur la SD démarrent un service HTTP local protégé. Aucun firmware n’est installé. La caméra continue à créer ses enregistrements ; le direct eWeLink a été vérifié sur l’exemplaire testé.
