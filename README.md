@@ -2,25 +2,25 @@
 
 <p align="center">
   <b>Windows 10 / 11 · 64-bit · Français / English</b><br>
-  3.6 beta 5 · By Torpedo · Independently developed · CAM-PT2 firmware 1.2.2
+  3.6 beta 9 · By Torpedo · Independently developed · CAM-PT2 firmware 1.2.2
 </p>
 
 <p align="center">
-  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.6.0-beta.5/SonoffSD-Setup-3.6.0-beta.5-win64.exe"><img src="assets/download-en.svg" alt="Download the Windows EXE — 3.6 beta 5" width="320"></a><br>
+  <a href="https://github.com/Torped00/sonoff-sd-releases/releases/download/v3.6.0-beta.9/SonoffSD-Setup-3.6.0-beta.9-win64.exe"><img src="assets/download-en.svg" alt="Download the Windows EXE — 3.6 beta 9" width="320"></a><br>
   <a href="README.fr.md">Lire en français</a> · <a href="#get-started">Getting started</a> · <a href="https://github.com/Torped00/sonoff-sd-releases/releases">Release notes & SHA-256</a>
 </p>
 
-## New in 3.6 beta 5
+## New in 3.6 beta 9
 
-- The window remembers its size, screen position and maximized state.
-- If a monitor is disconnected or the display arrangement changes, the window returns to an available work area. Player full screen and minimizing do not overwrite its normal size.
+- Recording searches show a large message and an animated progress indicator in the preview, plus a “Searching…” button. Empty results, errors and cancellation have clear outcomes.
+- The app can recover a known camera after its IP changes, using its remembered ONVIF identity and, when available, its local MAC address, followed by authenticated SD access. Names alone are never used to identify a camera; ambiguous matches require your choice.
+- **My cameras** is larger, resizable and maximizable. It remembers its own size and screen position separately from the main window.
+- Detected cameras are grouped separately from saved profiles not found in the latest scan. You can forget a local profile and undo the last removal while the manager stays open, without deleting recordings or pairing keys.
 
-Earlier improvements are retained:
+Earlier improvements are retained: remembered main-window size, position and list/preview divider; automatic searches after connection; a clearer audio checkbox; and detailed installer progress. A full installation can still take a few minutes.
 
-- The list/preview divider remembers its position across restarts and adapts to window size.
-- Recordings load automatically after connecting. Manual date searches remain available.
-- The audio export checkbox stays usable during preview and has a larger, clearer check mark.
-- Installation shows verification, copying and finalization, with progress updates inside large files. A full install can still take a few minutes.
+<p align="center"><img src="assets/cameras-fr.png" alt="Larger camera manager with detected and saved profile groups, using synthetic demonstration data" width="100%"></p>
+<p align="center"><sub>French interface. Synthetic demonstration data, not real camera addresses or identifiers.</sub></p>
 
 ## Find the moment. Keep the file.
 
@@ -44,7 +44,7 @@ Drag the start and end handles, check the passage, then export it. Full-file exp
 
 ## Get started
 
-1. Download and run **SonoffSD-Setup-3.6.0-beta.5-win64.exe**. Python and a separate VLC installation are not required. The installer offers separate **Desktop** and **Start menu** shortcuts; both open the complete application.
+1. Download and run **SonoffSD-Setup-3.6.0-beta.9-win64.exe**. Python and a separate VLC installation are not required. The installer offers separate **Desktop** and **Start menu** shortcuts; both open the complete application.
 2. For the initial setup, power the camera **off**, remove its microSD card and connect it to the PC with a card reader.
 3. In **My cameras → Prepare a CAM-PT2 SD card**, select the removable card and confirm the model and firmware. Existing unrecognised startup scripts are refused. The card is not formatted and recordings are not deleted.
 4. Eject the card, insert it into the powered-off camera, and power it on. Allow about two minutes for startup.
@@ -57,6 +57,16 @@ Drag the start and end handles, check the passage, then export it. Full-file exp
 Starting with **3.6**, updates use one application folder and a stable **Sonoff SD – Torpedo** shortcut. The installer offers to move the three older 3.5 betas to the Recycle Bin after verifying all their files. Modified or unrecognised folders are preserved and reported.
 
 The uninstaller is available in **Windows installed apps**, or through `Uninstall.exe` in the application folder. Settings, camera pairings and downloaded videos are kept for reinstallation. Uninstalling the Windows application does not disable the startup files on the microSD card; removing those remains a separate operation.
+
+## When the camera changes IP
+
+A successful direct connection lets the app remember the camera’s ONVIF identity and its MAC address when locally available. If the saved address stops responding, the app tries a bounded network search and checks the identity and authenticated SD access before changing the saved address. Duplicate camera names are fine. Missing, conflicting or ambiguous identity information requires a manual choice in **My cameras**. An older profile may need one successful manual selection before automatic recovery can work. MAC information may be unavailable across routers or VPNs and is not a replacement for authentication.
+
+We traced one real failure to an **old development SD startup script bound to a fixed IP**. A separate, targeted card-script repair restored access. Current helper packages already listen independently of the assigned IP, but **updating the Windows EXE does not rewrite files already on a card**. If detection works but the SD service does not, check the card preparation separately. Keep the existing pairing and recordings; do not format or blindly prepare the card again. A DHCP reservation can help keep addresses stable, but a compatible helper does not require it.
+
+Recovery was checked against the real test camera using a simulated stale saved address. A fresh physical DHCP reassignment after the repair has not been independently tested.
+
+**Why are old cameras still listed?** Saved profiles are not the same as devices found in the latest scan. “Forget this profile” only removes the local list entry. It keeps recordings and pairing keys, and the last removal can be undone while the manager stays open. A camera still online may appear again in a later scan. Detection alone does not establish SD compatibility.
 
 ## Compatibility & limits
 
